@@ -1,1 +1,1 @@
-It transforms spreadsheet into Api
+It transforms  google spreadsheet into Api
