@@ -5,8 +5,6 @@ function doGet() {
   var data = sheet.getDataRange().getValues();
    const jsonData = convertToJson(data);
       for (var i = 0; i < data.length; i++) {
-    // Logger.log('Product name: ' + data[i][0]);
-    // Logger.log('Product number: ' + data[i][1]);
     console.log(data)
   }
   return ContentService
