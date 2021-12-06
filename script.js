@@ -1,10 +1,10 @@
 
 
 function doGet() {
-  var sheet = SpreadsheetApp.getActiveSheet();
-  var data = sheet.getDataRange().getValues();
+  let sheet = SpreadsheetApp.getActiveSheet();
+  let data = sheet.getDataRange().getValues();
    const jsonData = convertToJson(data);
-      for (var i = 0; i < data.length; i++) {
+      for (let i = 0; i < data.length; i++) {
     console.log(data)
   }
   return ContentService
