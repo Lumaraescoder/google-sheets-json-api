@@ -4,9 +4,7 @@ function doGet() {
   let sheet = SpreadsheetApp.getActiveSheet();
   let data = sheet.getDataRange().getValues();
    const jsonData = convertToJson(data);
-      for (let i = 0; i < data.length; i++) {
-    console.log(data)
-  }
+  
   return ContentService
     .createTextOutput(JSON.stringify(jsonData))
     .setMimeType(ContentService.MimeType.JSON);
